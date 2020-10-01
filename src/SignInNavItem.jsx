@@ -16,7 +16,7 @@ class SignInNavItem extends React.Component {
         this.signIn = this.signIn.bind(this);
     }
 
-    async componentDidMount() {
+    componentDidMount() {
         const clientId = window.ENV.GOOGLE_CLIENT_ID;
         if (!clientId) return;
         window.gapi.load('auth2', ()=> {
